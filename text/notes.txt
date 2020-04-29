@@ -3,4 +3,14 @@ That said, pixels do still have their place in web design for elements that trul
 should stay the same size regardless of context. Border widths are appropriate
 in pixels, as are images that have inherent pixel dimensions. 
 
+EM Units
+The preferred values for font-size in contemporary web design are the relative
+length units em and rem, as well as percentage values. You can specify font size
+in pixels (px), but in general, they do not provide the flexibility required in
+web page design.
 
+To maintain the browser’s default size, set the font-size of the root element
+to 100% (see Note):
+html {
+ font-size: 100%;
+}
