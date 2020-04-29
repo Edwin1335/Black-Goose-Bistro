@@ -9,15 +9,40 @@ length units em and rem, as well as percentage values. You can specify font size
 in pixels (px), but in general, they do not provide the flexibility required in
 web page design.
 
+Browser Defualt Size
 To maintain the browser’s default size, set the font-size of the root element
 to 100% (see Note):
 html {
  font-size: 100%;
 }
 
- In this property, the order of
+Fonts
+In this property, the order of
 the values is important:
 { font: style weight stretch variant size/line-height font-family; }
 
+Selectors
 Note that I’ve used a next-sibling selector (h2 + p) to select any
 paragraph that follows an h2. 
+
+Pseudo Class Selectors
+:focus  Applies when the element is selected and ready for input
+:hover  Applies when the mouse pointer is over the element
+:active Applies when the element (such as a link or button) is in the
+        process of being clicked or tapped
+
+The required order for
+pseudo-classes is:
+:link
+:visited
+:focus
+:hover
+:active
+
+Code
+a { text-decoration: none; } /* turns underlines off for all links */
+a:link { color: maroon; }
+a:visited { color: gray; }
+a:focus { color: maroon; background-color: #ffd9d9; }
+a:hover { color: maroon; background-color: #ffd9d9; }
+a:active { color: red; background-color: #ffd9d9; }
