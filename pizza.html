@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza</title>
+  <style>
+    * {
+      list-style-type: none;
+    }
+
+    body {
+      max-width: 90vw;
+    }
+
+    li {
+      margin: .3em;
+    }
+
+    dl {
+      margin-bottom: .5em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Black Bistro | Pizza-on-Demand</h1>
+
+    <p>Our 12" wood-fired pizza are available for delivery. Build your custom pizza and we'll deliver it within an hour.
+    </p>
+  </header>
+
+  <form action="http://www.blackgoosebistro.com/pizza.php" target="_blank" method="POST">
+    <!-- Your Information -->
+    <fieldset>
+      <legend>Your information</legend>
+      <ul>
+        <li><label for="customername">Name:</label> <input type="text" name="customername" id=""> </li>
+        <li><label for="address"></label> Address: </label> <input type="text" name="address" id="customerAddress"></li>
+        <li><label for="telephone">Telephone:</label> <input type="tel" name="telephone" id="telephone"></li>
+        <li><label for="email">email:</label><input type="email" name="email" id="email"></li>
+        <li><label for="instructions">Deliver Instructions:</label><br> <textarea name="instructions" cols="55" rows="4" placeholder="No more than 400 characters long"></textarea></li>
+      </ul>
+    </fieldset>
+
+    <!-- Radio -->
+    <h2>Design Your Dream Pizza:</h2>
+    <fieldset>
+      <legend>Pizza Specs</legend>
+      <fieldset>
+        <legend>Pick a Crust <em>(Choose one)</em></legend>
+        <ul>
+          <li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
+          <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
+          <li><label><input type="radio" name="crust" value="cheese crust"> Cheese-stuffed crust</label></li>
+          <li><label><input type="radio" name="crust" value="gluten free"> Gluten-free</label></li>
+        </ul>
+      </fieldset>
+
+      <!-- Box -->
+      <fieldset>
+        <legend>Toppings <em>(choose as many as you want)</em></legend>
+        <ul>
+          <li><label><input type="checkbox" name="toppings[]" value="red sauce" checked> Red sauce</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="white sauce"> White sauce</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="mozzarella"> Mozzarella Cheese</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="anchovies"> Anchovies</label></li>
+        </ul>
+      </fieldset>
+
+      <!-- Number Scroll -->
+      <fieldset>
+        <label for="pizzas">Numbers<br>How many pizzas:</label>
+        <select name="pizzas" id="numbers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </fieldset>
+
+      <!-- Submit -->
+      <p><input type="submit" value="Bring me a pizza"> <input type="submit" value="Reset"> </p>
+    </fieldset>
+  </form>
+</body>
+
+</html>

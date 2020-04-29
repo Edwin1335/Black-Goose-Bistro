@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table Challenge</title>
+  <style>
+    td,
+    th {
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+
+    table {
+      size: 80px;
+      border: 1px solid black;
+      margin: 80px;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <table>
+      <!-- Caption -->
+      <caption>
+        Your Content Here
+      </caption>
+      <!-- Fist Row -->
+      <tr>
+        <!-- Row Span and Column Span span the cell wider up or down -->
+        <th rowspan="2"></th>
+        <th colspan="2">A common header for two subheads</th>
+        <th rowspan="2">Header 3</th>
+      </tr>
+      <!-- Second Row -->
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+      <!-- Third Row -->
+      <tr>
+        <th>Thing A</th>
+        <td>data A1</td>
+        <td>data A2</td>
+        <td>data A3</td>
+      </tr>
+      <!-- Fourth Row -->
+      <tr>
+        <th>Thing B</th>
+        <td>data B1</td>
+        <td>data B2</td>
+        <td>data B3</td>
+      </tr>
+      <!-- Fifth Row -->
+      <tr>
+        <th>Thing C</th>
+        <td>data c1</td>
+        <td>data c2</td>
+        <td>data c3</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
