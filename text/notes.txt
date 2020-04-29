@@ -18,3 +18,6 @@ html {
  In this property, the order of
 the values is important:
 { font: style weight stretch variant size/line-height font-family; }
+
+Note that I’ve used a next-sibling selector (h2 + p) to select any
+paragraph that follows an h2. 
