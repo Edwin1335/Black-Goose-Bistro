@@ -1,0 +1,6 @@
+Pixels Units
+That said, pixels do still have their place in web design for elements that truly
+should stay the same size regardless of context. Border widths are appropriate
+in pixels, as are images that have inherent pixel dimensions. 
+
+
