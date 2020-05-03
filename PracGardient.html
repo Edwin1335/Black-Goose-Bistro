@@ -34,12 +34,40 @@
       #last {
         width: 100vw;
         height: 25vh;
-        background-image: linear-gradient(90deg, yellow, orange 25%, purple);
+        background-image: linear-gradient(
+          180deg,
+          black 1%,
+          white 15%,
+          90%,
+          black 99%
+        );
+      }
+      #butt {
+        background-color: #4caf50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        border: 2px solid black;
+        border-radius: 9%;
+        margin-left: 30%;
+        margin-top: 20px;
+        background: linear-gradient(
+          to bottom,
+          #e2e2e2 0%,
+          #dbdbdb 50%,
+          #d1d1d1 51%,
+          #fefefe 100%
+        );
       }
     </style>
   </head>
   <body>
-    <div id="first"></div>
+    <div id="first"><button type="submit" id="butt">Click Me!</button></div>
+
     <div id="second"></div>
     <div id="third"></div>
     <div id="last"></div>
