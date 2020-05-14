@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 0;
+}
+
+div {
+  background-color: #c2f670;
+  width: 200px;
+  height: 200px;
+}
+
+.first {
+  border: 3px double black;
+}
+
+.second {
+  padding: 2em;
+  overflow: hidden;
+}
+
+.third {
+  padding: 2em;
+  overflow: hidden;
+  border: 4px solid red;
+}
+
+.fourth {
+  padding: 1em;
+  overflow: hidden;
+  margin: 1em 6em;
+  border: 4px dashed black;
+}
+
+.fifth {
+  padding: 1em 50px;
+  overflow: hidden;
+  border: 2px solid black;
+  margin-left: 2em;
+  margin-right: 2em;
+}
