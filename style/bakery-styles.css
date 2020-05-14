@@ -95,13 +95,28 @@ main img {
 img[src*="muffin"] {
   margin-left: 50px;
   -webskit-shape-outside: circle(1110px);
-  shape-outside:  polygon(0px 0px, 197px 0px, 241px
-31px, 241px 68px, 226px 82px, 219px 131px, 250px
-142px, 250px 158px, 0px 158px);
+  shape-outside: polygon(
+    0px 0px,
+    197px 0px,
+    241px 31px,
+    241px 68px,
+    226px 82px,
+    219px 131px,
+    250px 142px,
+    250px 158px,
+    0px 158px
+  );
 }
+
+#award {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+}
+
 img[src*="bread"] {
-  -webskit-shape-outside: ellipse(130px 95px at 50% 50%); 
-  shape-outside:  ellipse(130px 95px at 50% 50%); 
+  -webskit-shape-outside: ellipse(130px 95px at 50% 50%);
+  shape-outside: ellipse(130px 95px at 50% 50%);
 }
 
 h3 {
