@@ -13,5 +13,21 @@ The Images folder stores all the images needed for the restaurant site.
 The Icons folder stores the SVG iconn needed for the site. 
 Icons such as the Facebook icon, Instagram icon, Github icon, ..etc.
 
-Specify padding in any of the CSS length units (em and px are the most common) or as a percentage of the width of the parent element.
+The Following are very important notes from the book tha i would like to have as a guide:
+
+1. Specify padding in any of the CSS length units (em and px are the most common) or as a percentage   of the width of the parent element.
+
+2. Collapsing margins
+Using the two paragraphs from the previous figure as an example, if the top
+element has a bottom margin of 4em, and the following element has a top
+margin of 2em, the resulting margin space between elements does not add
+up to 6ems Rather, the margins collapse and the resulting margin between
+the paragraphs will be 4em, the largest specified value. 
+
+3. Floated Text Elements 
+Always provide a width for floated text elements.
+If you do not provide a width value, the width of the floated block will be
+set to auto, which fills the available width of the browser window or other
+containing element. There’s not much sense in having a full-width floated
+box, because the idea is to wrap text next to the float, not start below it. 
 
