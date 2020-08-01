@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout Practice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .Layout {
+        display: grid;
+        grid-template-rows:
+          [header-start] 100px [content-start] 400px
+          [footer-start] 100px;
+        grid-template-columns: [ads] 200px [main] 1fr [links] 200px;
+        grid-template-areas:
+          "header header header"
+          "ads main links"
+          "footer footer footer";
+      }
+
+      .one {
+        background-color: cadetblue;
+      }
+      .two {
+        background-color: rgb(164, 211, 212);
+      }
+      .three {
+        background-color: rgb(123, 136, 2);
+      }
+      .four {
+        background-color: rgb(131, 109, 226);
+      }
+      .five {
+        background-color: rgb(108, 160, 95);
+      }
+      .six {
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Layout">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+    </div>
+  </body>
+</html>
