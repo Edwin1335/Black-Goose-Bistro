@@ -12,3 +12,6 @@ The Images folder stores all the images needed for the restaurant site.
 
 The Icons folder stores the SVG iconn needed for the site. 
 Icons such as the Facebook icon, Instagram icon, Github icon, ..etc.
+
+Specify padding in any of the CSS length units (em and px are the most common) or as a percentage of the width of the parent element.
+
