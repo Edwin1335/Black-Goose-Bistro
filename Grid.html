@@ -8,13 +8,14 @@
       rel="stylesheet"
     />
     <style>
-
       html {
         box-sizing: border-box;
       }
+
       * {
         box-sizing: inherit;
       }
+
       body {
         font-family: Georgia, serif;
         font-size: 100%;
@@ -32,47 +33,54 @@
       }
 
       #figC {
-          grid-row: 3/4;
-          grid-column: span 1/ -1;
+        grid-row: 3/4;
+        grid-column: span 1/ -1;
       }
 
       #figA {
-       grid-area: 3 / 3 / 4 / 4;
-
+        grid-area: 3 / 3 / 4 / 4;
       }
 
       #figB {
-       grid-area: 3 / 5 / 4 / 6;
-
+        grid-area: 3 / 5 / 4 / 6;
       }
       /* VISUAL STYLES START HERE */
 
       /* link styles */
-      a:link, a:visited { color: #DC6903; }
-      a:focus, a:hover, a:active { color: #F9AB33; }
+      a:link,
+      a:visited {
+        color: #dc6903;
+      }
+      a:focus,
+      a:hover,
+      a:active {
+        color: #f9ab33;
+      }
 
       a {
         text-decoration: none;
         border-bottom: 1px dotted;
-        padding-bottom: .2em;
+        padding-bottom: 0.2em;
       }
 
-
-
       /* nav styles */
-      nav, footer {
+      nav,
+      footer {
         font-family: verdana, sans-serif;
-        background-color: #783F27;
+        background-color: #783f27;
         grid-row-start: 1;
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 8; /* you could also use -1 */
       }
 
-      nav ul li a:link, nav ul li a:visited {
-        color: #F9AB33;
+      nav ul li a:link,
+      nav ul li a:visited {
+        color: #f9ab33;
       }
-      nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+      nav ul li a:focus,
+      nav ul li a:hover,
+      nav ul li a:active {
         color: #fff;
       }
       nav ul {
@@ -83,50 +91,47 @@
         justify-content: center;
       }
       nav ul li {
-        font-size: .8em;
+        font-size: 0.8em;
         text-transform: uppercase;
-        letter-spacing: .2em;
+        letter-spacing: 0.2em;
       }
       nav ul li a {
         display: block;
         border: 1px solid;
-        border-radius: .5em;
-        padding: .5em 1em;
-        margin: .5em;
+        border-radius: 0.5em;
+        padding: 0.5em 1em;
+        margin: 0.5em;
       }
-
 
       /* main styles */
       main {
-        font-family: 'Stint Ultra Expanded', Georgia, serif;
+        font-family: "Stint Ultra Expanded", Georgia, serif;
         background-color: white;
         line-height: 1.8em;
         color: #555;
         padding: 1em;
-        border: double 4px #EADDC4;
+        border: double 4px #eaddc4;
         border-radius: 25px;
         grid-row: main-start / main-end;
         grid-column: main-start / main-end;
         grid-area: main;
       }
 
-
       /* misc styles */
 
       figure {
         margin: 0;
-        padding: 0;'
-         /* clears browser styles for figures */
+        padding: 0;
+        /* clears browser styles for figures */
       }
 
       footer {
-        color: #EADDC4;
+        color: #eaddc4;
         text-align: center;
-        font-size: .8em;
-        padding: .5em;
+        font-size: 0.8em;
+        padding: 0.5em;
         grid-area: 5 / 3 / 6 / 8;
       }
-      
     </style>
   </head>
 
