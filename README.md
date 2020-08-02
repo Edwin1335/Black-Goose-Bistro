@@ -32,4 +32,5 @@ containing element. There’s not much sense in having a full-width floated
 box, because the idea is to wrap text next to the float, not start below it. 
 
 
+Finished on August 2, 2020 :)
 
