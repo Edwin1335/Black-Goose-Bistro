@@ -23,33 +23,52 @@
           "footer footer footer";
       }
 
-      .one {
+      #one {
         background-color: cadetblue;
+        /* grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4; */
+
+        /* grid-row: 1 / 2;
+        grid-column: 1 / span 3; */
+
+        grid-area: header;
       }
-      .two {
+
+      #two {
         background-color: rgb(164, 211, 212);
+        grid-area: ads; 
       }
-      .three {
+
+      #three {
         background-color: rgb(123, 136, 2);
+         grid-area: main;
       }
-      .four {
+
+      #four {
         background-color: rgb(131, 109, 226);
+        grid-area: links;
       }
-      .five {
+
+      #five {
         background-color: rgb(108, 160, 95);
+        grid-area: footer;
       }
-      .six {
+
+      #six {
         background-color: cadetblue;
       }
+
     </style>
   </head>
   <body>
     <div class="Layout">
-      <div class="one"></div>
-      <div class="two"></div>
-      <div class="three"></div>
-      <div class="four"></div>
-      <div class="five"></div>
+      <div id="one"></div>
+      <div id="two"></div>
+      <div id="three"></div>
+      <div id="four"></div>
+      <div id="five"></div>
     </div>
   </body>
 </html>
